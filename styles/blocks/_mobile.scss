@@ -1,0 +1,30 @@
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+
+    &__top{
+        width: 620px;
+        flex-shrink: 0;
+
+        @include mobile{
+            width: 320px;
+        }
+
+        @include mobile-s{
+            flex-shrink: 1;
+        }
+    }
+
+    &__title{
+        margin-bottom: 8px;
+        max-width: 450px;
+    }
+
+    &__descr{
+        font-size: 12px;
+        max-width: 620px;
+        margin-bottom: 34px;
+    }
+}

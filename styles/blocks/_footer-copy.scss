@@ -1,0 +1,34 @@
+.footer__copy{
+
+    &-list{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+        @include mobile-s{
+            flex-direction: column;
+        }
+    }
+
+    &-item{
+        @include hover{
+            color: var(--color-accent);
+        }
+
+        &:not(:last-child){
+            padding-right: 10px;
+            border-right: 2px solid  var(--color-light);
+
+            @include mobile-s{
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+    }
+}

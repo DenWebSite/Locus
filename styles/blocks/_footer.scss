@@ -1,0 +1,27 @@
+.footer{
+    overflow-x: visible;
+    padding-block: 60px 45px;
+    margin-top: 80px;
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        margin-bottom: 45px;
+    }
+
+    &__soc1al{
+
+        &-title{
+            @include fluid_text(30,22);
+        }
+
+        &-list{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+        }
+    }
+}

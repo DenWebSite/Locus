@@ -1,0 +1,27 @@
+.section{
+    padding-block: var(--section-padding-y);
+
+    &--hero{
+        --sectionHeroPaddingTop: 110px;
+
+        padding-bottom: var(--section-padding-y);
+        padding-top: var(--sectionHeroPaddingTop);
+
+        @include mobile{
+            --section-padding-y: 80px;
+            --sectionHeroPaddingTop: 50px;
+        }
+    }
+
+    &--light-bg{
+        background-color: var(--color-blue);
+    }
+
+    &--hidden-x{
+        overflow-x: hidden;
+    }
+
+    @include mobile{
+        --section-padding-y: 80px;
+    }
+}

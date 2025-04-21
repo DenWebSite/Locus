@@ -1,0 +1,23 @@
+.partners{
+
+    &-company__list{
+        display: flex;
+        column-gap: 53px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+
+        @include mobile{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.company{
+    &__list-item{
+        @include mobile{
+            transform: scale(0.5);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.mobile{
+
+    &__list{
+        display: flex;
+        column-gap: 16px;
+        margin-bottom: 60px;
+
+        &-item{
+            max-width: 310px;
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+    
+    }
+
+    &-item__descr{
+        max-width: 270px;
+        font-size: 11px;
+    }
+    
+}

@@ -1,0 +1,58 @@
+.hero {
+
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: visible;
+    }
+
+    &__main {
+        max-width: 617px;
+        position: relative;
+        z-index: 3;
+
+        @include mobile{
+            max-width: 500px;
+        }
+    }
+
+    &__title {
+        max-width: 500px;
+        line-height: 76px;
+        margin-bottom: 8px;
+
+        @include mobile{
+            line-height: 56px;
+        }
+    }
+
+    &__descr {
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__image {
+        position: absolute;
+        top: -130px;
+        right: -200px;
+        z-index: 2;
+        background-repeat: no-repeat;
+
+        @include desktop{
+            transform: scale(0.7);
+            top: -200px;
+        }
+
+        @include tablet{
+            transform: scale(0.5);
+            opacity: 0.3;
+            
+        }
+    }
+
+}

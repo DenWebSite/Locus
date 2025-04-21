@@ -1,0 +1,32 @@
+.form{
+    padding-top: 15px;
+    text-align: center;
+
+    max-width: 400px;
+    width: 100%;
+
+    &__title{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__field{
+        margin-bottom: 52px;
+    }
+}
+
+.field__input{
+    border-radius: 1px;
+    background-color: var(--color-blue-alt);
+    border: none;
+    border: 2px solid var(--color-border-gray);
+    width: 100%;
+    height: 48px;
+    padding-inline: 10px;
+    color: var(--color-light);
+
+    &:focus{
+        border-color: var(--color-accent);
+        outline: none;
+    }
+}

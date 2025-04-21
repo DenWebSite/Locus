@@ -1,0 +1,41 @@
+.btn {
+    @include flex-center(true);
+    @include reset-button;
+
+    font-size: 16px;
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+    height: var(--button-height);
+    padding-inline: 32px;
+    color: var(--color-light);
+
+    @include hover {
+        border: var(--border-blue);
+        color: var(--color-accent)
+    }
+
+    &-accent{
+        background-color: var(--color-accent);
+        border: var(--border-blue);
+
+        @include hover{
+            background-color: var(--color-light);
+            border: var(--border-blue);
+        }
+
+        &-dots{
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                background-image: url('../../images/dot-frame.png');
+                width: 70px;
+                height: 70px;
+                right: -50px;
+                top: -6px
+            }
+        }
+    }
+}

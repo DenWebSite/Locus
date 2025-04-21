@@ -1,0 +1,18 @@
+.mobile__content{
+    display: flex;
+    justify-content: center;
+
+    @include mobile{
+        transform: scale(0.7);
+        margin-right: 20px;
+    }
+
+    @include mobile-s{
+        display: none;
+    }
+}
+
+.mobile__image{
+    max-width: 360px;
+    height: auto;
+}

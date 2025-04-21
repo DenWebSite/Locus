@@ -1,0 +1,16 @@
+.pricing{
+
+    &__top{
+        max-width: 630px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    &__title{
+        margin-bottom: 8px;
+    }
+    
+    &__descr{
+        margin-bottom: 44px;
+    }
+}

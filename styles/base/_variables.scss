@@ -1,0 +1,34 @@
+:root{
+    --color-dark: #010225;
+    --color-blue: #0C0D2E;
+    --color-blue-alt: #010225;
+    --color-accent: #159BE8;
+    --color-light: #FFFFFF;
+
+    --color-toggle: #212250;
+    --color-pink: #F95B74;
+    --color-violet: #7C44E2;
+
+    --color-border-gray: #282b53;
+
+    --border: 2px solid var(--color-light);
+
+    --border-blue: 2px solid var(--color-accent);
+    --border-gray: 2px solid var(var(--color-border-gray));
+
+    --border-radius: 100px;
+    --border-radius-small: 1px;
+
+    --font-family-base: "League Spartan", sans-serif;
+
+    --container-width: 1268px;
+    --container-padding-x: 10px;
+
+    --section-padding-y: 160px;
+
+    --input-height: 48px;
+    --button-height: 48px;
+
+    --transition-duration: .2s;
+
+}

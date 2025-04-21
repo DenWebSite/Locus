@@ -1,0 +1,42 @@
+.partners__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    column-gap: 30px;
+    row-gap: 40px;
+
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    @include mobile{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    &-item{
+        max-width: 300px;
+    }
+
+    &-stars{
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+
+    &-person{
+        position: relative;
+
+        margin-top: 14px;
+        display: flex;
+        column-gap: 10px;
+
+        &-info{
+            position: absolute;
+            left: 60px;
+            top: 14px;
+        }
+    }
+}
